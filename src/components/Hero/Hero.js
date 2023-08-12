@@ -27,7 +27,15 @@ const Hero = (props) => (
 					strong track record. Eager to leverage extensive experience
 					for impactful contributions in software development.
 				</SectionText>
-				<Button onClick={props.handleClick}>Learn More</Button>
+				<Button onClick={props.handleClick}>
+					<a
+						href='https://drive.google.com/uc?export=download&id=1d4HBbDEeGdYeaOoeYP77HPhDOa62abhY'
+						target='_blank'
+						rel='noopener noreferrer'
+						download>
+						Download CV
+					</a>
+				</Button>
 			</LeftSection>
 		</Section>
 	</>
