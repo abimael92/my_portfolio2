@@ -51,8 +51,8 @@ const Header = () => (
 		</Div1>
 		<Div2>
 			<li>
-				<Link href='#projects' legacyBehavior>
-					<NavLink>Projects</NavLink>
+				<Link href='#about' legacyBehavior>
+					<NavLink>About</NavLink>
 				</Link>
 			</li>{' '}
 			<li>
@@ -61,8 +61,18 @@ const Header = () => (
 				</Link>
 			</li>{' '}
 			<li>
-				<Link href='#about' legacyBehavior>
-					<NavLink>About</NavLink>
+				<Link href='#experience' legacyBehavior>
+					<NavLink>Experience</NavLink>
+				</Link>
+			</li>{' '}
+			<li>
+				<Link href='#projects' legacyBehavior>
+					<NavLink>Projects</NavLink>
+				</Link>
+			</li>
+			<li>
+				<Link href='#achievements' legacyBehavior>
+					<NavLink>Achievements</NavLink>
 				</Link>
 			</li>
 		</Div2>

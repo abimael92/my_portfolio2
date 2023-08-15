@@ -10,18 +10,19 @@ import {
 	CarouselItemText,
 	CarouselItemTitle,
 	CarouselMobileScrollNode,
-} from './TimeLineStyles';
+} from './ExperienceStyles';
+
 import {
 	Section,
 	SectionDivider,
-	SectionText,
 	SectionTitle,
 } from '../../styles/GlobalComponents';
+
 import { TimeLineData } from '../../constants/constants';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
-const Timeline = () => {
+const Experience = () => {
 	const [activeItem, setActiveItem] = useState(0);
 	const carouselRef = useRef();
 
@@ -66,19 +67,9 @@ const Timeline = () => {
 	}, []);
 
 	return (
-		<Section id='about'>
-			<SectionTitle>About Me</SectionTitle>
-			<SectionText>
-				Hello! I'm a motivated web app developer with a passion for
-				coding and problem-solving. I thrive on challenges that
-				encourage creative thinking and collaborative teamwork. Eager to
-				learn and grow, I'm seeking new opportunities to contribute to
-				impactful projects that push boundaries and make a difference.
-				Let's create innovative solutions together!
-			</SectionText>
-			<SectionDivider />
-
+		<Section id='experience'>
 			<SectionTitle>Experience </SectionTitle>
+			<SectionDivider />
 			<CarouselContainer ref={carouselRef} onScroll={handleScroll}>
 				<>
 					{/* {TimeLineData.map((item, index) => (
@@ -163,9 +154,8 @@ const Timeline = () => {
 					);
 				})}
 			</CarouselButtons>
-			<SectionDivider />
 		</Section>
 	);
 };
 
-export default Timeline;
+export default Experience;

@@ -5,13 +5,14 @@ import {
 	SectionDivider,
 	SectionTitle,
 } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
+import { Box, Boxes, BoxNum, BoxText } from './AchievementsStyles';
 
 import { PersonalAchievements } from '../../constants/constants';
 
-const Acomplishments = () => (
-	<Section>
+const Achievements = () => (
+	<Section id='achievements'>
 		<SectionTitle>Personal Achievements</SectionTitle>
+		<SectionDivider />
 		<Boxes>
 			{PersonalAchievements.map((card, index) => (
 				<Box key={index}>
@@ -20,8 +21,7 @@ const Acomplishments = () => (
 				</Box>
 			))}
 		</Boxes>
-		<SectionDivider />
 	</Section>
 );
 
-export default Acomplishments;
+export default Achievements;

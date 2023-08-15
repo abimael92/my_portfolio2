@@ -16,12 +16,15 @@ import {
 
 const Technologies = () => (
 	<Section id='tech'>
-		<SectionDivider divider />
-		<SectionTitle>Technologies</SectionTitle>
+		<SectionTitle>Technologies </SectionTitle>
+		<SectionDivider />
+
 		<SectionText>
 			I've worked with a range a technologies in the web development
 			world. From Back-end To Design
 		</SectionText>
+		<SectionDivider colorAlt />
+
 		<List>
 			<ListItem>
 				<picture>
@@ -60,7 +63,6 @@ const Technologies = () => (
 				</ListContainer>
 			</ListItem>
 		</List>
-		<SectionDivider colorAlt />
 	</Section>
 );
 

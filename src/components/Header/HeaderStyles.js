@@ -3,48 +3,58 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(
+		5,
+		minmax(0, 1fr)
+	); /* Adjusted column sizing */
 	grid-template-rows: 1fr;
-	grid-column-gap: 2rem;
+	grid-gap: 2rem; /* Added gap between grid items */
 	padding: 1rem;
 	padding-top: 2rem;
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(
+			5,
+			1fr
+		); /* Keep the same number of columns */
 		grid-template-rows: repeat(2, 60px);
-		grid-column-gap: 0.5rem;
-		grid-row-gap: 0.5rem;
+		grid-gap: 0.5rem;
 	}
 `;
+
 export const Span = styled.div`
 	font-size: 2rem;
 `;
+
 export const Div1 = styled.div`
 	grid-area: 1 / 1 / 2 / 2;
 	display: flex;
-	flex-direction: row;
-	align-content: center;
+	align-items: center;
+
 	@media ${(props) => props.theme.breakpoints.sm} {
-		grid-area: 1 / 1 / 2 / 3;
+		grid-area: 1 / 1 / 2 / 3; /* Adjust for smaller screens */
 	}
 `;
+
 export const Div2 = styled.div`
-	grid-area: 1 / 2 / 2 / 4;
+	grid-area: 1 / 2 / 2 / 5; /* Adjusted to span 3 columns */
 	display: flex;
+	align-items: center;
 	justify-content: space-around;
+
 	@media ${(props) => props.theme.breakpoints.sm} {
-		grid-area: 2 / 2 / 3 / 5;
+		grid-area: 2 / 1 / 3 / 6; /* Span all 5 columns for smaller screens */
 	}
 `;
+
 export const Div3 = styled.div`
 	grid-area: 1 / 5 / 2 / 6;
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
+	justify-content: space-around;
+
 	@media ${(props) => props.theme.breakpoints.sm} {
-		align-items: center;
-		grid-area: 1 / 4 / 2 / 6;
+		grid-area: 1 / 4 / 2 / 6; /* Adjust for smaller screens */
 	}
 `;
 
