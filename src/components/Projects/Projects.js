@@ -22,8 +22,9 @@ import { projects } from '../../constants/constants';
 
 const Projects = () => (
 	<Section nopadding id='projects'>
-		<SectionDivider />
 		<SectionTitle main>Projects</SectionTitle>
+		<SectionDivider />
+
 		<GridContainer>
 			{projects.map((p, i) => {
 				// Edit projectgs

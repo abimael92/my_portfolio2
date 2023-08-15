@@ -111,8 +111,30 @@ export const SectionText = styled.p`
 	}
 `;
 
+export const SectionSmallText = styled.p`
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0.02em;
+	color: rgba(255, 255, 255, 0.75);
+	padding-right: 16px;
+	margin-top: 10px;
+
+	@media ${(props) => props.theme.breakpoints.md} {
+		font-size: 12px;
+		line-height: 18px;
+		padding-right: 32px;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		font-size: 10px;
+		line-height: 16px;
+		padding-right: 0;
+	}
+`;
+
 export const SectionDivider = styled.div`
-	width: 64px;
+	width: 84px;
+	padding-bottom: 12px;
+	margin-bottom: 16px;
 	height: 6px;
 	border-radius: 10px;
 	background-color: #fff;
