@@ -1,7 +1,14 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
+import { BsPalette2 } from 'react-icons/bs';
 
 export const Container = styled.div`
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	background: #0f1624;
 	display: grid;
 	grid-template-columns: repeat(
 		5,
@@ -68,7 +75,17 @@ export const NavLink = styled.a`
 		color: #fff;
 		opacity: 1;
 		cursor: pointer;
+		text-decoration: underline; /* Add underline on hover */
 	}
+
+	/* Apply underline to the active NavLink */
+	&.active,
+	&:active {
+		color: #462a60;
+		opacity: 1;
+		text-decoration: underline;
+	}
+
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0.5rem;
 	}
@@ -132,4 +149,63 @@ export const SocialIcons = styled.a`
 		transform: scale(1.2);
 		cursor: pointer;
 	}
+`;
+
+export const DropdownMenu = styled.div`
+	position: relative;
+	display: inline-block;
+	margin-left: 20px;
+
+	/* Style for the icon */
+	svg {
+		cursor: pointer;
+		transition: transform 0.2s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+`;
+
+export const PaletteIconWrapper = styled.div`
+	position: relative;
+`;
+
+export const PaletteIcon = styled(BsPalette2)`
+	cursor: pointer;
+	color: white;
+	font-size: 2rem;
+`;
+
+export const ColorPalettePopup = styled.div`
+	position: absolute;
+	top: 100%; /* Position the popup right below the PaletteIcon */
+	left: 0;
+	background-color: #0f1624;
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	z-index: 1000; /* Ensure it's above other content */
+`;
+
+export const ColorOption = styled.div`
+	color: white;
+	cursor: pointer;
+	padding: 6px 0;
+	transition: color 0.3s;
+
+	&:hover {
+		color: #462a60;
+	}
+`;
+
+export const PaletteChangerContainer = styled.div`
+	position: absolute;
+	top: 100%; /* Position it below the PaletteIconWrapper */
+	left: 0;
+	background-color: #0f1624; /* Set background color */
+	padding: 10px; /* Add some padding for spacing */
+	border-radius: 4px; /* Add border radius for a neat look */
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+	z-index: 100; /* Ensure it's above other content */
 `;

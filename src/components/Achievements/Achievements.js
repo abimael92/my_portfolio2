@@ -16,7 +16,7 @@ const Achievements = () => (
 		<Boxes>
 			{PersonalAchievements.map((card, index) => (
 				<Box key={index}>
-					<BoxNum>{`${card.role}`}</BoxNum>
+					<BoxNum>{`+${card.role}`}</BoxNum>
 					<BoxText>{card.achievement}</BoxText>
 				</Box>
 			))}
