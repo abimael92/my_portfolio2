@@ -21,7 +21,7 @@ const Technologies = () => (
 
 		<SectionText>
 			I've worked with a range a technologies in the web development
-			world. From Back-end To Design
+			world. From Front-end, Back-end To Design
 		</SectionText>
 		<SectionDivider colorAlt />
 

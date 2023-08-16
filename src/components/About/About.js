@@ -2,9 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 
 import {
 	BulletPoint,
+	Container,
 	Row,
 	PersonalInfoGrid,
 	PersonalInfo,
+	Image,
 	InfoItem,
 	InfoTitle,
 	InfoDetail,
@@ -17,6 +19,8 @@ import {
 	SectionTitle,
 } from '../../styles/GlobalComponents';
 
+const remToPixels = (rem) => rem * 16;
+
 const About = () => {
 	const birthday = new Date(1992, 9, 7); // October is month 9 (zero-based index)
 	const today = new Date();
@@ -27,14 +31,26 @@ const About = () => {
 		<Section id='about'>
 			<SectionTitle>About Me</SectionTitle>
 			<SectionDivider />
-			<SectionText>
-				Hello! I'm a motivated web app developer with a passion for
-				coding and problem-solving. I thrive on challenges that
-				encourage creative thinking and collaborative teamwork. Eager to
-				learn and grow, I'm seeking new opportunities to contribute to
-				impactful projects that push boundaries and make a difference.
-				Let's create innovative solutions together!
-			</SectionText>
+			<Container>
+				<SectionText>
+					Hello! I'm a motivated web app developer with a passion for
+					coding and problem-solving. I thrive on challenges that
+					encourage creative thinking and collaborative teamwork.
+					Eager to learn and grow, I'm seeking new opportunities to
+					contribute to impactful projects that push boundaries and
+					make a difference. Let's create innovative solutions
+					together!
+				</SectionText>
+				<Image
+					src='/images/Yo_new.jpg'
+					alt='Abimael'
+					width={remToPixels(16)}
+					height={remToPixels(16)}
+					style={{
+						margin: '6px',
+					}}
+				/>
+			</Container>
 			<Row>
 				<PersonalInfoGrid>
 					<InfoItem>

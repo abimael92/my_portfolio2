@@ -75,10 +75,9 @@ export const NavLink = styled.a`
 		color: #fff;
 		opacity: 1;
 		cursor: pointer;
-		text-decoration: underline; /* Add underline on hover */
+		text-decoration: underline;
 	}
 
-	/* Apply underline to the active NavLink */
 	&.active,
 	&:active {
 		color: #462a60;
@@ -91,7 +90,6 @@ export const NavLink = styled.a`
 	}
 `;
 
-/// DropDown Contact
 export const ContactDropDown = styled.button`
 	border: none;
 	display: flex;
