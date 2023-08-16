@@ -1,5 +1,22 @@
 export const projects = [
 	{
+		title: 'ThreeJs',
+		description:
+			'Create your unique and exclusive shirt with our brand-new 3D customization tool. Unleash your imagination and define your own style.',
+		image: '/images/ThreeJS.png',
+		tags: [
+			'React',
+			'Valtio',
+			'Three.js',
+			'Tailwind CSS',
+			'Node',
+			'Express',
+			'OpenAI API',
+		],
+		source: 'https://github.com/abimael92/threejs.git',
+		id: 0,
+	},
+	{
 		title: 'MERN Memories',
 		description:
 			"Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
@@ -7,7 +24,7 @@ export const projects = [
 		tags: ['Mongo', 'Express', 'React', 'Node'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
-		id: 0,
+		id: 1,
 	},
 	{
 		title: 'E-Commerce',
@@ -17,7 +34,7 @@ export const projects = [
 		tags: ['React', 'JavaScript'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
-		id: 1,
+		id: 2,
 	},
 	{
 		title: 'WebRTC App',
@@ -27,7 +44,7 @@ export const projects = [
 		tags: ['React', 'WebRTC'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
-		id: 2,
+		id: 3,
 	},
 	{
 		title: 'Unichat',
@@ -37,7 +54,7 @@ export const projects = [
 		tags: ['React', 'ChatEngine', 'Firebase'],
 		source: 'https://google.com',
 		visit: 'https://google.com',
-		id: 3,
+		id: 4,
 	},
 ];
 
@@ -126,15 +143,12 @@ export const EducationData = [
 		title: 'Bachelor’s degree in computer science',
 		institution: 'Instituto Tecnológico de Cd. Jiménez',
 		date: '04/2012 - 04/2016',
-		achievements: [
-			'Designed and implemented responsive user interfaces using React, TypeScript, Jest, and Cypress for a major web application project.',
-			'Efficiently managed projects and version control.',
-			'Contributed to a clean and well-organized codebase, optimizing communication and collaboration among team members.',
-		],
-		description:
-			'Designed and implemented responsive user interfaces using React, TypeScript, Jest, and Cypress for a major web application project. Actively contributed to a clean and well-organized codebase, optimizing communication and collaboration among team members.',
 	},
-	// Add more education details here...
+	{
+		title: 'Web Developer Training (HTML, CSS, & JavaScript)',
+		institution: 'Microsoft',
+		date: '06/2018 - 08/2018',
+	},
 ];
 
 export const PersonalAchievements = [

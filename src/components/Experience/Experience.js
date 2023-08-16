@@ -19,6 +19,10 @@ import {
 	CarouselButtonDot,
 	CarouselLine,
 	CarouselTimeLine,
+	EducationItem,
+	EducationHeaderRight,
+	EducationItemTitle,
+	EducationItemTextBold,
 } from './ExperienceStyles'; // Your style definitions
 
 import {
@@ -30,7 +34,7 @@ import {
 
 import { Calendar } from '@styled-icons/boxicons-regular';
 
-import { TimeLineData } from '../../constants/constants'; // Your data
+import { TimeLineData, EducationData } from '../../constants/constants'; // Your data
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -182,6 +186,29 @@ const Experience = () => {
 				})}
 				<ArrowButton onClick={handleForward}>&gt;</ArrowButton>
 			</CarouselButtons>
+
+			<EducationItem active={activeItem}>
+				{EducationData.map((item, index) => (
+					<>
+						<EducationHeaderRight>
+							<EducationItemTitle>
+								<CalendarIcon>
+									<Calendar size='24' />
+								</CalendarIcon>
+								{item.date}
+							</EducationItemTitle>
+						</EducationHeaderRight>
+
+						<EducationItemTextBold>
+							Title: {item.title}
+						</EducationItemTextBold>
+
+						<EducationItemTextBold>
+							Institution: {item.institution}
+						</EducationItemTextBold>
+					</>
+				))}
+			</EducationItem>
 		</Section>
 	);
 };

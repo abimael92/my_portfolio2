@@ -176,8 +176,9 @@ export const CarouselPosition = styled.span`
 `;
 
 export const CalendarIcon = styled.span`
-	font-size: 12px;
+	font-size: 24px;
 	margin-right: 4px;
+	align-self: flex-start;
 `;
 
 export const CarouselItemTextBold = styled.p`
@@ -224,5 +225,86 @@ export const AchievementList = styled.ul`
 		font-size: 10px;
 		line-height: 16px;
 		padding-right: 0;
+	}
+`;
+
+export const EducationItem = styled.div`
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+
+	transition: opacity 0.3s;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	padding: 1rem;
+	margin: 0.5rem;
+	z-index: 2;
+	align-self: center;
+`;
+
+export const EducationItemTitle = styled.h4`
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+	text-align: center;
+	margin: 10px auto 0;
+
+	@media ${(props) => props.theme.breakpoints.sm} {
+		font-size: 14px;
+		line-height: 20px;
+	}
+`;
+
+export const EducationItemText = styled.p`
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0.02em;
+	color: rgba(255, 255, 255, 0.75);
+	text-align: center;
+	margin: 10px auto 0;
+
+	@media ${(props) => props.theme.breakpoints.md} {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		font-size: 10px;
+		line-height: 16px;
+	}
+`;
+
+export const EducationHeader = styled.div`
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	justify-content: space-between;
+`;
+
+export const EducationHeaderRight = styled.div`
+	margin-left: auto;
+	align-items: center;
+	display: inline-block;
+`;
+
+export const EducationItemTextBold = styled.p`
+	display: flex;
+	font-weight: bold;
+	align-items: center;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 0.02em;
+	color: rgba(255, 255, 255, 0.75);
+	margin: 10px 0;
+
+	@media ${(props) => props.theme.breakpoints.md} {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		font-size: 12px;
+		line-height: 16px;
 	}
 `;
