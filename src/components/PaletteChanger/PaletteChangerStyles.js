@@ -27,6 +27,7 @@ export const ColorPalettePopup = styled.div`
 
 export const ColorOption = styled.div`
 	cursor: pointer;
+	border-radius: 4px;
 	display: flex;
 	flex-direction: column; /* Display items in a column */
 	padding: 10px;

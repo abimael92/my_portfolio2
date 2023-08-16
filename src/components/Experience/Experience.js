@@ -29,6 +29,7 @@ import {
 	Section,
 	SectionDivider,
 	SectionTitle,
+	SectionTitle2,
 	SectionSmallText,
 } from '../../styles/GlobalComponents'; // Your other components
 
@@ -187,6 +188,8 @@ const Experience = () => {
 				<ArrowButton onClick={handleForward}>&gt;</ArrowButton>
 			</CarouselButtons>
 
+			<SectionTitle2>Education</SectionTitle2>
+			<SectionDivider />
 			<EducationItem active={activeItem}>
 				{EducationData.map((item, index) => (
 					<>

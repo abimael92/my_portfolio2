@@ -140,7 +140,7 @@ export const SkillsData = [
 
 export const EducationData = [
 	{
-		title: 'Bachelor’s degree in computer science',
+		title: 'Bachelors’ degree in computer science',
 		institution: 'Instituto Tecnológico de Cd. Jiménez',
 		date: '04/2012 - 04/2016',
 	},
