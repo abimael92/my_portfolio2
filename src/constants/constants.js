@@ -31,18 +31,22 @@ export const projects = [
 			"Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
 		image: '/images/1.png',
 		tags: ['Mongo', 'Express', 'React', 'Node'],
-		source: 'https://google.com',
-		visit: 'https://google.com',
+
 		id: 2,
 	},
 	{
-		title: 'E-Commerce',
+		title: 'CarShop',
 		description:
-			"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-		image: '/images/2.png',
-		tags: ['React', 'JavaScript'],
-		source: 'https://google.com',
-		visit: 'https://google.com',
+			'The Car Shop is a modern web application that enables users to browse and purchase cars online. Built using React, this app provides a seamless user experience for car enthusiasts.',
+		image: '/images/CarShop-preview.png',
+		tags: [
+			'React',
+			' NextJS 13',
+			' TypeScript',
+			'Tailwind CSS',
+			'Rapid-API',
+		],
+		source: 'https://github.com/abimael92/car_showcase.git',
 		id: 3,
 	},
 	{
