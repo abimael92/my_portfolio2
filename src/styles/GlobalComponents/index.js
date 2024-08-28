@@ -105,9 +105,12 @@ export const SectionSubtitle = styled.h3`
 		to bottom,
 		#ffffff 0%,
 		#ffffff 100%
-	); /* Debugging gradient */
+	);
 	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
 	padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
+	background-clip: text; 
+	text-fill-color: transparent; 
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: ${(props) => (props.main ? '56px' : '48px')};
@@ -156,7 +159,7 @@ export const SectionSmallText = styled.p`
 	margin-top: 10px;
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: 12px;
+;		font-size: 12px;
 		line-height: 18px;
 		padding-right: 32px;
 	}
@@ -276,10 +279,24 @@ export const ButtonBack = styled.div`
 			? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)'
 			: 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
 	cursor: pointer;
-	transition: 0.5s ease;
+	transition: all 0.3s ease;
 	position: relative;
 	overflow: hidden;
 	opacity: ${({ disabled }) => (disabled ? '.5' : '1')};
+
+	&:hover {
+    background: ${({ alt }) =>
+		alt
+			? 'linear-gradient(270deg, #FF4500 0%, #B133FF 100%)' /* Change background color on hover */
+			: 'linear-gradient(270deg, #00A3E0 0%, #B133FF 100%)'};
+    color: #FF4500; /* Change text color on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect on hover */
+	}
+
+ 	&:focus {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6); /* Glow effect on focus */
+    outline: none; /* Remove default focus outline */
+  }
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: ${({ alt }) => (alt ? '150px' : '184px')};
@@ -294,7 +311,7 @@ export const ButtonBack = styled.div`
 		font-size: 14px;
 		margin-bottom: ${({ alt }) => (alt ? '0' : '32px')};
 	}
-`;
+`
 
 export const ButtonFront = styled.button`
 	border: none;
@@ -323,11 +340,15 @@ export const ButtonFront = styled.button`
 			: 'none'};
 
 	&:hover {
-		opacity: 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* White glow effect on hover */
 	}
+
 	&:focus {
-		outline: none;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* White glow effect on focus */
+    transform: scale(0.98); /* Slightly shrinks the button on focus */
+    outline: none; /* Removes the default focus outline */
 	}
+
 	&:active {
 		opacity: 1;
 		box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),

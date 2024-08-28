@@ -19,17 +19,17 @@ const Hero = (props) => (
 					Abimael Garcia (Web Developer)
 				</SectionTitle>
 				<SectionText>
-					Experienced Full-stack Developer with over 8 years in web
-					app development, specializing in frontend work with React.
-					Proven problem solver, adept at collaborating within
-					multicultural, multilingual teams. Recognized for
-					exceptional communication, collaborative approach, and
-					strong track record. Eager to leverage extensive experience
-					for impactful contributions in software development.
+					Experienced Full-Stack Developer with ten years of expertise in
+					building web applications from the ground up. Known for delivering
+					high-quality, scalable solutions and for effective collaboration in
+					diverse, multicultural teams. Proficient in React, Redux, Typescript,
+					Node.js, MongoDB, among other technologies, and dedicated to
+					driving innovation and excellence throughout the entire
+					development process.
 				</SectionText>
 				<Button onClick={props.handleClick}>
 					<a
-						href='https://drive.google.com/uc?export=download&id=1d4HBbDEeGdYeaOoeYP77HPhDOa62abhY'
+						href='https://drive.google.com/uc?export=download&id=1IjFu-kn8scFmSAkGZ1DjC1hDlRuYHm2V'
 						target='_blank'
 						rel='noopener noreferrer'
 						download>

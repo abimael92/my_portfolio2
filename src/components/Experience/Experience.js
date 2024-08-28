@@ -64,7 +64,7 @@ const Experience = () => {
 			const index = Math.round(
 				(carouselRef.current.scrollLeft /
 					carouselRef.current.scrollWidth) *
-					TOTAL_CAROUSEL_COUNT
+				TOTAL_CAROUSEL_COUNT
 			);
 
 			setActiveItem(index);
@@ -192,7 +192,7 @@ const Experience = () => {
 			<SectionDivider />
 			<EducationItem active={activeItem}>
 				{EducationData.map((item, index) => (
-					<>
+					<React.Fragment key={index}>
 						<EducationHeaderRight>
 							<EducationItemTitle>
 								<CalendarIcon>
@@ -209,7 +209,7 @@ const Experience = () => {
 						<EducationItemTextBold>
 							Institution: {item.institution}
 						</EducationItemTextBold>
-					</>
+					</React.Fragment>
 				))}
 			</EducationItem>
 		</Section>

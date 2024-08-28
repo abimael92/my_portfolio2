@@ -25,8 +25,8 @@ const About = () => {
 	const birthday = new Date(1992, 9, 7); // October is month 9 (zero-based index)
 	const today = new Date();
 	const age = today.getFullYear() - birthday.getFullYear();
+	const workExp = today.getFullYear() - 2015;
 
-	const age21 = age >= 21 ? age - 21 : 0;
 	return (
 		<Section id='about'>
 			<SectionTitle>About Me</SectionTitle>
@@ -42,7 +42,7 @@ const About = () => {
 					together!
 				</SectionText>
 				<Image
-					src='/images/Yo_new.jpg'
+					src='/images/my_picture.png'
 					alt='Abimael'
 					width={remToPixels(16)}
 					height={remToPixels(16)}
@@ -61,7 +61,7 @@ const About = () => {
 					<InfoItem>
 						<BulletPoint />
 						<InfoTitle>
-							Phone: <InfoDetail> +52 (614) 510 54 02</InfoDetail>
+							Phone: <InfoDetail> +52 (614) 132 54 05</InfoDetail>
 						</InfoTitle>
 					</InfoItem>
 					<InfoItem>
@@ -94,7 +94,7 @@ const About = () => {
 						<BulletPoint />
 						<InfoTitle>
 							Experience:
-							<InfoDetail>{age21}</InfoDetail>
+							<InfoDetail>{workExp}</InfoDetail>
 						</InfoTitle>
 					</InfoItem>
 				</PersonalInfoGrid>
