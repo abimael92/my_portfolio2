@@ -1,0 +1,8 @@
+@import './utils/_variables'; // Import variables
+
+/* Global Styles */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: map-get($colors, background);
+    color: map-get($colors, primary); // Use map-get for accessing color variables
+}

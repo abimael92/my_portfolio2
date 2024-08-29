@@ -1,0 +1,42 @@
+@import '../utils/_variables';
+
+.contact {
+  background-color: map-get($colors, background);
+
+  @media (max-width: map-get($breakpoints, sm)) {
+    .form-container {
+      font-size: 14px;
+    }
+  }
+
+  .success {
+    color: green;
+  }
+
+  .danger {
+    color: red;
+  }
+
+  .form-container {
+    .input-field {
+      margin-bottom: 1rem;
+    }
+
+    textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: map-get($colors, primary);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: map-get($colors, primary-dark);
+      }
+    }
+  }
+}

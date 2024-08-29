@@ -1,0 +1,9 @@
+@import '../../styles/utils/variables';
+
+.banner {
+  background-color: map-get($colors, primary);
+
+  @media (max-width: map-get($breakpoints, sm)) {
+    font-size: 14px;
+  }
+}
